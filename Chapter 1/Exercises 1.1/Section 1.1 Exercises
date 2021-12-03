@@ -1,1 +1,40 @@
-1. The text showed how to interchange the
+1. Re-arrange [a,b,c,d] <- [b,c,d,a]
+	
+	Attempt:
+		x <- a
+		a <- b
+		b <- c
+		c <- d
+		d <- x
+		
+			current : [a,b,c,d] <- [b,c,d,a]
+			Values presented as if represented by original value :  [b, a, c, d]
+		
+		Logic: We can shift each object left, if left shift would reach out of bounds shift to the end
+		
+2. Prove in Algorithm E1 besides the initial first step the following always true : m > n at step 1
+	Algorithm: Euclid's Greatest Common Divisor
+	
+		Attempt:
+				Division Theorom:
+				
+				If n is any integer and d is a positive integer, there
+				exist unique integers q and r such that
+				a = mq + r where 0 ≤ r < m.
+				
+				Pseudo Proof ( All can be proven in depth)
+				
+				By definition only 1 can have a remainder of 0 ( we can prove this by induction )
+				
+				For all division of numbers > 1; r must be > 1 ( we can prove this by induction)
+				
+				If r >= 1 then we must iterate the algorithm by definition of E1, During iteration by definition n <- r and m = n;
+				
+				By definition when we iterate n <- r which must be less than m by the division theorom definition
+				
+				Therefore since m must always be greater than r and n = r; n at any reiteration of step 1 must be less than m
+				
+				 
+			
+				
+				
